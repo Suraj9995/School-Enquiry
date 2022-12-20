@@ -1,0 +1,61 @@
+.side-img{
+    background-image: url(./img/SideImg.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 100% 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.School-logo{
+    width: 40%;
+    height: auto;
+}
+
+.School-slogans{
+    text-align: center;
+    font-size: small;
+    color: #fff;
+}
+
+.Main-header{
+    font-size: 24px;
+    color: #004383;
+    margin-bottom: 50px;
+}
+
+.Main-header span{
+    padding-bottom: 5px;
+    border-bottom: 3px solid #004383;
+}
+
+.Form-group{
+    margin: 0;
+    font-weight: 400;
+    background-color: #004383;
+    color: #fff;
+    padding: 6px 100px 6px 20px;
+}
+
+.Form-section{
+    width: 100%;
+    border-top: 3px solid #004383;
+}
+
+.label-heading{
+    color: #004383;
+    font-weight: 600;
+}
+
+.Select-menu{
+    width: 200px;
+    height: 30px;
+}
+
+.Submit-btn{
+    color: white;
+    background-color: #004383;
+    border: 2px solid #004383;
+}
+
