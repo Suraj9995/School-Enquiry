@@ -1,4 +1,6 @@
+
 .side-img{
+    width: 30%;
     background-image: url(./img/SideImg.png);
     background-repeat: no-repeat;
     height: 100vh;
@@ -6,6 +8,10 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .School-logo{
@@ -13,10 +19,26 @@
     height: auto;
 }
 
+.Mobile-School-logo{
+    width: 40%;
+    height: auto;
+    margin-bottom: 16px;
+    display: none;
+}
+
 .School-slogans{
     text-align: center;
     font-size: small;
     color: #fff;
+}
+
+.form-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
 }
 
 .Main-header{
@@ -31,11 +53,12 @@
 }
 
 .Form-group{
-    margin: 0;
     font-weight: 400;
     background-color: #004383;
     color: #fff;
     padding: 6px 100px 6px 20px;
+    align-self: flex-start;
+    margin-bottom: 0;
 }
 
 .Form-section{
@@ -44,14 +67,28 @@
 }
 
 .label-heading{
+    display: block;
     color: #004383;
     font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.Details{
+    margin: 0;
+    width: 100%;
+    border-top: 3px solid #004383;
+    padding-top: 12px;
+}
+
+.Details-sub-section{
+    width: 100%;
+    margin-top: 16px;
 }
 
 .Select-menu{
-    width: 200px;
+    width: 100%;
     height: 30px;
-}
+} 
 
 .Submit-btn{
     color: white;
@@ -59,3 +96,12 @@
     border: 2px solid #004383;
 }
 
+
+@media screen and (max-device-width: 768px) {
+    .side-img{
+       display: none;
+    }
+    .Mobile-School-logo{
+        display: block;
+    }
+  }

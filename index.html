@@ -11,15 +11,16 @@
   </head>
   <body>
     <div class=".container-xl d-flex">
-        <div class="side-img w-25 d-flex flex-column justify-content-between align-items-center">
+        <div class="side-img">
             <img class="School-logo mt-3" src="./img/LogoLowHD.png" alt="School Logo" srcset="">
             <p class="School-slogans m-3">A community of lifelong learners, responsible global citizens, and champions of our own <br> success.</p>
         </div>
-        <form class="w-75 m-3 d-flex flex-column justify-content-center align-items-center">
+        <form class="form-section">
+          <img class="Mobile-School-logo" src="./img/LogoLowHD.png" alt="School-logo" srcset="">
             <h2 class="Main-header">School <span>Enquiry</span> Form</h2>
-                <h5 class="Form-group align-self-start">Student Details</h5>
-              <div class="Form-section d-flex flex-row justify-content-between">
-                <div class="d-flex flex-column m-3">
+                <h5 class="Form-group">Student Details</h5>
+              <div class="row Details">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                 <label class="label-heading">Year</label>
                 <select class="Select-menu" aria-label="Default select example">
                   <option value="21-22" selected>2021-22</option>
@@ -28,47 +29,44 @@
                   <option value="24-25">2024-25</option>
                 </select>
               </div>
-              <div class="d-flex flex-column m-3">
+              <div class="col-sm-12 col-md-4 col-lg-4">
                 <label class="label-heading">Board</label>
                 <select class="Select-menu" aria-label="Default select example">
-                  <option value="1" selected>I</option>
-                  <option value="2">II</option>
-                  <option value="3">III</option>
-                  <option value="4">IV</option>
-                  <option value="5">V</option>
-                  <option value="6">VI</option>
+                  <option value="StateBoard" selected>State Board</option>
+                  <option value="ICSE">ICSE</option>
+                  <option value="CBSE">CBSE</option>
                 </select>
               </div>
-              <div class="d-flex flex-column m-3">
+              <div class="col-sm-12 col-md-4 col-lg-4">
                 <label class="label-heading">Grade</label>
                 <select class="Select-menu" aria-label="Default select example">
-                  <option value="A+" selected>A+</option>
-                  <option value="A">A</option>
-                  <option value="B">B</option>
-                  <option value="C">C</option>
+                  <option value="I" selected>I</option>
+                  <option value="II">II</option>
+                  <option value="III">III</option>
+                  <option value="IV">IV</option>
                 </select>
               </div>
               </div>
-              <div class="w-100 d-flex flex-row justify-content-between">
-                <div class="d-flex flex-column m-3">
+              <div class="Details-sub-section row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                 <label class="label-heading">First Name</label>
                 <input class="Select-menu" type="text" name="FirstName" id="">
               </div>
-              <div class="d-flex flex-column m-3">
+              <div class="col-sm-12 col-md-4 col-lg-4">
                 <label class="label-heading">Father Name</label>
                 <input class="Select-menu" type="text" name="MiddleName" id="">
               </div>
-              <div class="d-flex flex-column m-3">
+              <div class="col-sm-12 col-md-4 col-lg-4">
                 <label class="label-heading">Surname</label>
                 <input class="Select-menu" type="text" name="Surname" id="">
               </div>
               </div>
-              <div class="w-100 d-flex flex-row justify-content-between">
-                <div class="d-flex flex-column m-3">
+              <div class="Details-sub-section row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                 <label class="label-heading">Date of Birth</label>
                 <input class="Select-menu" type="date" name="DateOfBirth" id="">
               </div>
-              <div class="d-flex flex-column m-3">
+              <div class="col-sm-12 col-md-4 col-lg-4">
                 <label class="label-heading">Gender</label>
                 <select class="Select-menu" aria-label="Default select example">
                   <option value="Male" selected>Male</option>
@@ -76,7 +74,7 @@
                   <option value="Other">Other</option>
                 </select>
               </div>
-              <div class="d-flex flex-column m-3">
+              <div class="col-sm-12 col-md-4 col-lg-4">
                 <label class="label-heading">Enquiry Type</label>
                 <select class="Select-menu" aria-label="Default select example">
                   <option value="Online" selected>Online</option>
@@ -84,55 +82,55 @@
                 </select>
               </div>
               </div>
-              <h5 class="Form-group align-self-start mt-3">Family Details</h5>
-              <div class="Form-section d-flex flex-row justify-content-between">
-                <div class="d-flex flex-column m-3">
+              <h5 class="Form-group mt-4">Family Details</h5>
+              <div class="row Details">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                 <label class="label-heading">Father Name</label>
                 <input class="Select-menu" type="text" name="FatherName" id="">
               </div>
-              <div class="d-flex flex-column m-3">
+              <div class="col-sm-12 col-md-4 col-lg-4">
                 <label class="label-heading">Father Contact</label>
                 <input class="Select-menu" type="text" name="FatherContact" id="">
               </div>
-              <div class="d-flex flex-column m-3">
+              <div class="col-sm-12 col-md-4 col-lg-4">
                 <label class="label-heading">Father Mail ID</label>
                 <input class="Select-menu" type="email" name="FatherEmail" id="">
               </div>
               </div>
-              <div class="w-100 d-flex flex-row justify-content-between">
-                <div class="d-flex flex-column m-3">
+              <div class="row Details-sub-section">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                   <label class="label-heading">Mother Name</label>
                   <input class="Select-menu" type="text" name="MotherName" id="">
                 </div>
-                <div class="d-flex flex-column m-3">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                   <label class="label-heading">Mother Contact</label>
                   <input class="Select-menu" type="text" name="MotherContact" id="">
                 </div>
-                <div class="d-flex flex-column m-3">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                   <label class="label-heading">Mother Mail ID</label>
                   <input class="Select-menu" type="email" name="MotherEmail" id="">
                 </div>
               </div>
-              <div class="w-100 d-flex flex-row justify-content-between">
-                <div class="d-flex flex-column m-3">
+              <div class="row Details-sub-section">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                   <label class="label-heading">Society Name</label>
                   <input class="Select-menu" type="text" name="SocietyName" id="">
                 </div>
-                <div class="d-flex flex-column m-3">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                   <label class="label-heading">Area</label>
                   <input class="Select-menu" type="text" name="Area" id="">
                 </div>
-                <div class="d-flex flex-column m-3">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                   <label class="label-heading">Pincode</label>
                   <input class="Select-menu" type="text" name="Pincode" id="">
                 </div>
               </div>
-              <div class="w-100 d-flex flex-row justify-content-between">
-                <div class="d-flex flex-column m-3">
+              <div class="row Details-sub-section">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                   <label class="label-heading">Sibling Name</label>
                   <input class="Select-menu" type="text" name="SiblingName" id="">
                 </div>
-                <div class="d-flex flex-column m-3">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                   <label class="label-heading">Sibling Board</label>
                   <select class="Select-menu" aria-label="Default select example">
                     <option value="1" selected>I</option>
@@ -143,18 +141,18 @@
                     <option value="6">VI</option>
                   </select>
                 </div>
-                <div class="d-flex flex-column m-3">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                   <label class="label-heading">Sibling Date of Birth</label>
                   <input class="Select-menu" type="date" name="SiblingDateofBirth" id="">
                 </div>
               </div>
-              <h5 class="Form-group align-self-start">Previous School Details</h5>
-              <div class="Form-section d-flex flex-row justify-content-between">
-                <div class="d-flex flex-column m-3">
+              <h5 class="Form-group mt-4">Previous School Details</h5>
+              <div class="row Details">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                 <label class="label-heading">School Name</label>
                 <input class="Select-menu" type="text" name="schoolName" id="">
               </div>
-              <div class="d-flex flex-column m-3">
+              <div class="col-sm-12 col-md-4 col-lg-4">
                 <label class="label-heading">Board</label>
                 <select class="Select-menu" aria-label="Default select example">
                   <option value="1" selected>I</option>
@@ -165,7 +163,7 @@
                   <option value="6">VI</option>
                 </select>
               </div>
-              <div class="d-flex flex-column m-3">
+              <div class="col-sm-12 col-md-4 col-lg-4">
                 <label class="label-heading">Grade</label>
                 <select class="Select-menu" aria-label="Default select example">
                   <option value="A+" selected>A+</option>
@@ -175,8 +173,8 @@
                 </select>
               </div>
               </div>
-              <div class="w-100 d-flex flex-row justify-content-between">
-                <div class="w-100 m-3">
+              <div class="row Details-sub-section">
+                <div class="col-sm-12 col-md-12 col-lg-12">
                   <label class="label-heading">Remark</label>
                   <textarea class="" style="width: 100%; height: 100px; padding: 0;" type="text" name="Remark" id=""></textarea>
                 </div>
