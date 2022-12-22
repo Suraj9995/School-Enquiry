@@ -103,6 +103,11 @@
     border: 2px solid #004383;
 }
 
+.required:after {
+    content:" *";
+    color: #004383;
+  }
+
 
 @media screen and (max-device-width: 768px) {
     .side-img{
