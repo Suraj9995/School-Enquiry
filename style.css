@@ -52,6 +52,10 @@
     margin-bottom: 30px;
 }
 
+.form-component{
+    width: 100%;
+}
+
 .Main-header span{
     padding-bottom: 5px;
     border-bottom: 3px solid #004383;
@@ -65,6 +69,7 @@
     padding: 10px 100px 7px 20px;
     align-self: flex-start;
     margin-bottom: 0;
+    display: inline-block;
 }
 
 .Form-section{
@@ -90,6 +95,7 @@
 .Details-sub-section{
     width: 100%;
     margin-top: 16px;
+    margin-left: 0;
 }
 
 .Input-box{
@@ -138,7 +144,7 @@
 
 @media screen and (min-device-width: 1440px) {
     .side-img{
-        width: 60%;
+        width: 45%;
     }
     .School-logo{
         width: 33%;
@@ -146,5 +152,16 @@
     .School-slogans{
         font-size: 1.5rem;
         padding: 4rem;
+    }
+    .form-section{
+        padding: 0 2rem;
+    }
+    .Details{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .Details-sub-section{
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }

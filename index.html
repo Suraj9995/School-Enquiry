@@ -18,6 +18,7 @@
         <form class="form-section">
           <img class="Mobile-School-logo" src="./img/LogoLowHD.png" alt="School-logo" srcset="">
             <h2 class="Main-header">School <span>Enquiry</span> Form</h2>
+              <div class="form-component">            
                 <h5 class="Form-group">Student Details</h5>
               <div class="row Details">
                 <div class="col-sm-12 col-md-4 col-lg-4">
@@ -52,36 +53,38 @@
                 <label class="label-heading required">First Name</label>
                 <input class="Input-box" type="text" name="FirstName" autocomplete="off" id="" required>
               </div>
-              <div class="col-sm-12 col-md-4 col-lg-4">
-                <label class="label-heading required">Middle Name</label>
-                <input class="Input-box" type="text" name="MiddleName" autocomplete="off" id="" required>
-              </div>
-              <div class="col-sm-12 col-md-4 col-lg-4">
-                <label class="label-heading required">Surname</label>
-                <input class="Input-box" type="text" name="Surname" autocomplete="off" id="" required>
-              </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <label class="label-heading required">Middle Name</label>
+                  <input class="Input-box" type="text" name="MiddleName" autocomplete="off" id="" required>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <label class="label-heading required">Surname</label>
+                  <input class="Input-box" type="text" name="Surname" autocomplete="off" id="" required>
+                </div>
               </div>
               <div class="Details-sub-section row">
                 <div class="col-sm-12 col-md-4 col-lg-4">
-                <label class="label-heading required">Date of Birth</label>
-                <input class="Input-box" type="date" name="DateOfBirth" id="" required>
+                  <label class="label-heading required">Date of Birth</label>
+                  <input class="Input-box" type="date" name="DateOfBirth" id="" required>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <label class="label-heading required">Gender</label>
+                  <select class="Input-box" aria-label="Default select example" required>
+                    <option value="Male" selected>Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <label class="label-heading">Enquiry Type</label>
+                  <select class="Input-box" aria-label="Default select example">
+                    <option value="Online" selected>Online</option>
+                    <option value="offline">Offline</option>
+                  </select>
+                </div>
               </div>
-              <div class="col-sm-12 col-md-4 col-lg-4">
-                <label class="label-heading required">Gender</label>
-                <select class="Input-box" aria-label="Default select example" required>
-                  <option value="Male" selected>Male</option>
-                  <option value="Female">Female</option>
-                  <option value="Other">Other</option>
-                </select>
               </div>
-              <div class="col-sm-12 col-md-4 col-lg-4">
-                <label class="label-heading">Enquiry Type</label>
-                <select class="Input-box" aria-label="Default select example">
-                  <option value="Online" selected>Online</option>
-                  <option value="offline">Offline</option>
-                </select>
-              </div>
-              </div>
+              <div class="form-component">
               <h5 class="Form-group mt-4">Family Details</h5>
               <div class="row Details">
                 <div class="col-sm-12 col-md-4 col-lg-4">
@@ -135,6 +138,8 @@
                   <input class="Input-box" type="text" name="SiblingName" autocomplete="off" id="">
                 </div>
               </div>
+              </div>
+              <div class="form-component"> 
               <h5 class="Form-group mt-4">Previous School Details</h5>
               <div class="row Details">
                 <div class="col-sm-12 col-md-4 col-lg-4">
@@ -165,6 +170,7 @@
                   <textarea class="text-area" type="text" name="Remark" autocomplete="off" id=""></textarea>
                 </div>
                 </div>
+              </div>
                 <button class="align-self-start Submit-btn" type="submit">Submit</button>
               </div>
         </form>
