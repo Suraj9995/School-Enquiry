@@ -52,45 +52,5 @@ function postData() {
     tenantId: 1,
     status: "Pending",
   };
-
-  //   console.log(newData);
-
-  //   const newData = JSON.stringify(data);
-  //   let axiosConfig = {
-  //     headers: {
-  //       "Content-Type": "application/json;charset=UTF-8",
-  //       "Access-Control-Allow-Origin": "*",
-  //     },
-  //   };
-
-  axios
-    .post("http://103.164.54.202:8010/api/Adm/SaveEnquiry", data)
-    .then((response) => {
-      console.log(response);
-    })
-    .catch((error) => console.error(error));
+  
 }
-
-// const getUsers = () => {
-//   axios
-//     .get("http://103.164.54.202:8009/api/Master/GetAcademicYear/1")
-//     .then((response) => {
-//       const users = response.data;
-//       console.log(`GET users`, users);
-//     })
-//     .catch((error) => console.error(error));
-// };
-// getUsers();
-
-// const postData = (data) => {
-//   axios
-//     .post(
-//       "http://103.164.54.202:8010/api/Adm/SaveEnquiry",
-//       JSON.stringify(data)
-//     )
-//     .then((response) => {
-//       const addedUser = response.data;
-//       console.log(`POST: user is added`, addedUser);
-//     })
-//     .catch((error) => console.error(error));
-// };
