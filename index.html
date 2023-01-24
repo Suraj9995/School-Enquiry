@@ -5,177 +5,346 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Enquiry Form</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class=".container-xl d-flex">
-        <div class="side-img">
-            <img class="School-logo mt-3" src="./img/LogoLowHD.png" alt="School Logo" srcset="">
-            <p class="School-slogans m-3">A community of lifelong learners, responsible global citizens, and champions of our own <br> success.</p>
+      <div class="side-img">
+        <img
+          class="School-logo mt-3"
+          src="./img/LogoLowHD.png"
+          alt="School Logo"
+          srcset=""
+        />
+        <p class="School-slogans m-3">
+          A community of lifelong learners, responsible global citizens, and
+          champions of our own <br />
+          success.
+        </p>
+      </div>
+      <div class="form-section">
+        <img
+          class="Mobile-School-logo"
+          src="./img/LogoLowHD.png"
+          alt="School-logo"
+          srcset=""
+        />
+        <h2 class="Main-header">School <span>Enquiry</span> Form</h2>
+        <div class="form-component">
+          <h5 class="Form-group">Student Details</h5>
+          <div class="row Details">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading required">Year</label>
+              <select
+                class="Input-box"
+                aria-label="Default select example"
+                id="year"
+                name="Year"
+              >
+                <option value="21-22" selected>2021-22</option>
+                <option value="22-23">2022-23</option>
+                <option value="23-24">2023-24</option>
+                <option value="24-25">2024-25</option>
+              </select>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading required">Board</label>
+              <select
+                class="Input-box"
+                aria-label="Default select example"
+                name="Board"
+                id="board"
+                required
+              >
+                <option value="StateBoard" selected>State Board</option>
+                <option value="ICSE">ICSE</option>
+                <option value="CBSE">CBSE</option>
+              </select>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading required">Grade</label>
+              <select
+                class="Input-box"
+                aria-label="Default select example"
+                required
+                name="class"
+                id="class"
+              >
+                <option value="I" selected>I</option>
+                <option value="II">II</option>
+                <option value="III">III</option>
+                <option value="IV">IV</option>
+              </select>
+            </div>
+          </div>
+          <div class="Details-sub-section row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading required">First Name</label>
+              <input
+                class="Input-box"
+                type="text"
+                name="FirstName"
+                autocomplete="off"
+                id="firstName"
+                required
+              />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading required">Middle Name</label>
+              <input
+                class="Input-box"
+                type="text"
+                name="MiddleName"
+                autocomplete="off"
+                id="middleName"
+                required
+              />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading required">Surname</label>
+              <input
+                class="Input-box"
+                type="text"
+                name="Surname"
+                autocomplete="off"
+                id="lastName"
+                required
+              />
+            </div>
+          </div>
+          <div class="Details-sub-section row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading required">Date of Birth</label>
+              <input
+                class="Input-box"
+                type="date"
+                name="DateOfBirth"
+                id="dob"
+                required
+              />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading required">Gender</label>
+              <select
+                class="Input-box"
+                aria-label="Default select example"
+                required
+                id="gender"
+                name="Gender"
+              >
+                <option value="Male" selected>Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading">Enquiry Type</label>
+              <select
+                class="Input-box"
+                aria-label="Default select example"
+                id="enquiryType"
+                name="enquiryType"
+              >
+                <option value="Online" selected>Online</option>
+                <option value="offline">Offline</option>
+              </select>
+            </div>
+          </div>
         </div>
-        <form class="form-section">
-          <img class="Mobile-School-logo" src="./img/LogoLowHD.png" alt="School-logo" srcset="">
-            <h2 class="Main-header">School <span>Enquiry</span> Form</h2>
-              <div class="form-component">            
-                <h5 class="Form-group">Student Details</h5>
-              <div class="row Details">
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                <label class="label-heading required">Year</label>
-                <select class="Input-box" aria-label="Default select example">
-                  <option value="21-22" selected>2021-22</option>
-                  <option value="22-23">2022-23</option>
-                  <option value="23-24">2023-24</option>
-                  <option value="24-25">2024-25</option>
-                </select>
-              </div>
-              <div class="col-sm-12 col-md-4 col-lg-4">
-                <label class="label-heading required">Board</label>
-                <select class="Input-box" aria-label="Default select example" required>
-                  <option value="StateBoard" selected>State Board</option>
-                  <option value="ICSE">ICSE</option>
-                  <option value="CBSE">CBSE</option>
-                </select>
-              </div>
-              <div class="col-sm-12 col-md-4 col-lg-4">
-                <label class="label-heading required">Grade</label>
-                <select class="Input-box" aria-label="Default select example" required>
-                  <option value="I" selected>I</option>
-                  <option value="II">II</option>
-                  <option value="III">III</option>
-                  <option value="IV">IV</option>
-                </select>
-              </div>
-              </div>
-              <div class="Details-sub-section row">
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                <label class="label-heading required">First Name</label>
-                <input class="Input-box" type="text" name="FirstName" autocomplete="off" id="" required>
-              </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                  <label class="label-heading required">Middle Name</label>
-                  <input class="Input-box" type="text" name="MiddleName" autocomplete="off" id="" required>
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                  <label class="label-heading required">Surname</label>
-                  <input class="Input-box" type="text" name="Surname" autocomplete="off" id="" required>
-                </div>
-              </div>
-              <div class="Details-sub-section row">
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                  <label class="label-heading required">Date of Birth</label>
-                  <input class="Input-box" type="date" name="DateOfBirth" id="" required>
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                  <label class="label-heading required">Gender</label>
-                  <select class="Input-box" aria-label="Default select example" required>
-                    <option value="Male" selected>Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                  <label class="label-heading">Enquiry Type</label>
-                  <select class="Input-box" aria-label="Default select example">
-                    <option value="Online" selected>Online</option>
-                    <option value="offline">Offline</option>
-                  </select>
-                </div>
-              </div>
-              </div>
-              <div class="form-component">
-              <h5 class="Form-group mt-4">Family Details</h5>
-              <div class="row Details">
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                <label class="label-heading">Father Name</label>
-                <input class="Input-box" type="text" name="FatherName" autocomplete="off" id="">
-              </div>
-              <div class="col-sm-12 col-md-4 col-lg-4">
-                <label class="label-heading required">Father Contact</label>
-                <input class="Input-box" type="number"
+        <div class="form-component">
+          <h5 class="Form-group mt-4">Family Details</h5>
+          <div class="row Details">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading">Father Name</label>
+              <input
+                class="Input-box"
+                type="text"
+                name="FatherName"
+                autocomplete="off"
+                id="fatherName"
+              />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading required">Father Contact</label>
+              <input
+                class="Input-box"
+                type="number"
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                name="FatherContact" autocomplete="off" id="" maxlength="10" required>
-              </div>
-              <div class="col-sm-12 col-md-4 col-lg-4">
-                <label class="label-heading required">Father Mail ID</label>
-                <input class="Input-box" type="email" name="FatherEmail" autocomplete="off" id="" required>
-              </div>
-              </div>
-              <div class="row Details-sub-section">
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                  <label class="label-heading">Mother Name</label>
-                  <input class="Input-box" type="text" name="MotherName" autocomplete="off" id="">
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                  <label class="label-heading">Mother Contact</label>
-                  <input class="Input-box" type="number"
-                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                  name="MotherContact" autocomplete="off" id="" maxlength="10">
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                  <label class="label-heading">Mother Mail ID</label>
-                  <input class="Input-box" type="email" name="MotherEmail" autocomplete="off" id="">
-                </div>
-              </div>
-              <div class="row Details-sub-section">
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                  <label class="label-heading">Society Name</label>
-                  <input class="Input-box" type="text" name="SocietyName" autocomplete="off" id="">
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                  <label class="label-heading">Area</label>
-                  <input class="Input-box" type="text" name="Area" autocomplete="off" id="">
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                  <label class="label-heading">Pincode</label>
-                  <input class="Input-box" type="number" name="Pincode" autocomplete="off" id="">
-                </div>
-              </div>
-              <div class="row Details-sub-section">
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                  <label class="label-heading">Sibling Name</label>
-                  <input class="Input-box" type="text" name="SiblingName" autocomplete="off" id="">
-                </div>
-              </div>
-              </div>
-              <div class="form-component"> 
-              <h5 class="Form-group mt-4">Previous School Details</h5>
-              <div class="row Details">
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                <label class="label-heading">School Name</label>
-                <input class="Input-box" type="text" name="SchoolName" autocomplete="off" id="">
-              </div>
-              <div class="col-sm-12 col-md-4 col-lg-4">
-                <label class="label-heading">Board</label>
-                <select class="Input-box" aria-label="Default select example">
-                  <option value="StateBoard" selected>State Board</option>
-                  <option value="ICSE">ICSE</option>
-                  <option value="CBSE">CBSE</option>
-                </select>
-              </div>
-              <div class="col-sm-12 col-md-4 col-lg-4">
-                <label class="label-heading">Grade</label>
-                <select class="Input-box" aria-label="Default select example">
-                  <option value="I" selected>I</option>
-                  <option value="II">II</option>
-                  <option value="III">III</option>
-                  <option value="IV">IV</option>
-                </select>
-              </div>
-              </div>
-              <div class="row Details-sub-section">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                  <label class="label-heading">Remark</label>
-                  <textarea class="text-area" type="text" name="Remark" autocomplete="off" id=""></textarea>
-                </div>
-                </div>
-              </div>
-                <button class="align-self-start Submit-btn" type="submit">Submit</button>
-              </div>
-        </form>
+                name="FatherContact"
+                autocomplete="off"
+                id="fatherContact"
+                maxlength="10"
+                required
+              />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading required">Father Mail ID</label>
+              <input
+                class="Input-box"
+                type="email"
+                name="FatherEmail"
+                autocomplete="off"
+                id="fatherMailId"
+                required
+              />
+            </div>
+          </div>
+          <div class="row Details-sub-section">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading">Mother Name</label>
+              <input
+                class="Input-box"
+                type="text"
+                name="MotherName"
+                autocomplete="off"
+                id="motherName"
+              />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading">Mother Contact</label>
+              <input
+                class="Input-box"
+                type="number"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                name="MotherContact"
+                autocomplete="off"
+                id="motherCotact"
+                maxlength="10"
+              />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading">Mother Mail ID</label>
+              <input
+                class="Input-box"
+                type="email"
+                name="MotherEmail"
+                autocomplete="off"
+                id="motherMailId"
+              />
+            </div>
+          </div>
+          <div class="row Details-sub-section">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading">Society Name</label>
+              <input
+                class="Input-box"
+                type="text"
+                name="SocietyName"
+                autocomplete="off"
+                id="societyName"
+              />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading">Area</label>
+              <input
+                class="Input-box"
+                type="text"
+                name="Area"
+                autocomplete="off"
+                id="area"
+              />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading">Pincode</label>
+              <input
+                class="Input-box"
+                type="number"
+                name="Pincode"
+                autocomplete="off"
+                id="pinCode"
+              />
+            </div>
+          </div>
+          <div class="row Details-sub-section">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading">Sibling Name</label>
+              <input
+                class="Input-box"
+                type="text"
+                name="SiblingName"
+                autocomplete="off"
+                id="siblingDetails"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-component">
+          <h5 class="Form-group mt-4">Previous School Details</h5>
+          <div class="row Details">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading">School Name</label>
+              <input
+                class="Input-box"
+                type="text"
+                name="SchoolName"
+                autocomplete="off"
+                id="lastSchool"
+              />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading">Board</label>
+              <select
+                class="Input-box"
+                aria-label="Default select example"
+                id="lastBoard"
+                name="lastboard"
+              >
+                <option value="StateBoard" selected>State Board</option>
+                <option value="ICSE">ICSE</option>
+                <option value="CBSE">CBSE</option>
+              </select>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <label class="label-heading">Grade</label>
+              <select
+                class="Input-box"
+                aria-label="Default select example"
+                id="lastClass"
+                name="lastclass"
+              >
+                <option value="I" selected>I</option>
+                <option value="II">II</option>
+                <option value="III">III</option>
+                <option value="IV">IV</option>
+              </select>
+            </div>
+          </div>
+          <div class="row Details-sub-section">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <label class="label-heading">Remark</label>
+              <textarea
+                class="text-area"
+                type="text"
+                name="Remark"
+                autocomplete="off"
+                id="remark"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <button
+          class="align-self-start Submit-btn"
+          type="submit"
+          onclick="postData()"
+        >
+          Submit
+        </button>
+      </div>
     </div>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./App.js"></script>
   </body>
 </html>
